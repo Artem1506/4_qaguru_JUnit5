@@ -38,7 +38,7 @@ public class JUnitTests {
     })
     @ParameterizedTest(name = "Проверка поиска YouTube по {0}")
     void youTubeSerchTest(String testData){
-        
+
         Selenide.open("https://www.youtube.com/");
 
         $(byXpath("//input[@id=\'search\']")).val(testData); // не смог найти рабочий css selector
